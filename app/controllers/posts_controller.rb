@@ -9,10 +9,8 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      binding.pry
       redirect_to post_path(@post)
     else
-      binding.pry
       render_template :edit
     end
   end
