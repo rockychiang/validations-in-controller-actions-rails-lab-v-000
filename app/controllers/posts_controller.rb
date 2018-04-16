@@ -13,7 +13,7 @@ class PostsController < ApplicationController
       redirect_to post_path(@post)
     else
       binding.pry
-      render edit_post_path(@post)
+      render_template :edit
     end
   end
 
