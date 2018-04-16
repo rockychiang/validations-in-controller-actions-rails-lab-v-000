@@ -13,6 +13,7 @@ class PostsController < ApplicationController
       binding.pry
     else
       render edit_post_path(@post)
+      binding.pry
     end
   end
 
